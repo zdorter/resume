@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bu benim ilk web sayfam</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Bu web sitesi bir harika!" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <!-- <link> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <script></script> -->
+
+    <!-- internal CSS style -->
+    <style>
+      /* html elementlerine css uyguluyoruz */
+      li {
+        color: blue;
+        background-color: violet;
+        font-size: 20px;
+      }
+
+      /* class'lara css uyguluyoruz */
+      /* class'ları . ile başlatıyoruz */
+      .egitimli {
+        color: chocolate;
+        background-color: blanchedalmond;
+      }
+
+      button {
+        width: 100px;
+        height: 50px;
+      }
+
+      button:hover {
+        background-color: burlywood;
+        color: blue;
+      }
+
+      button:active {
+        background-color: cadetblue;
+        color: blue;
+      }
+
+      #baturhanınfotosu {
+        color: brown;
+        font-size: large;
+        text-align: center;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+    <!-- inline > internal -->
+  </head>
+  <body class="egitimli">
+    <!-- CSS : Cascading Style Sheets -->
+    <!-- inline style -->
+    <!--h1-->
+    <h1 style="color: red">Hello World</h1>
+
+    <!-- SHİFT + ALT + F  : Düzenlemek için-->
+
+    <!--Paragrah-->
+    <p style="color: bisque; background-color: darkblue; font-size: 18px">
+      Lorem ipsum <span style="color: yellow">dolor</span> sit, amet consectetur
+      adipisicing elit. Rem quasi illo quos rerum laboriosam nam modi eligendi
+      nemo assumenda
+      <span
+        style="
+          color: blueviolet;
+          font-size: medium;
+          background-color: aquamarine;
+          font-family: fantasy;
+        "
+        >porro</span
+      >, excepturi iusto? Sint, in culpa repellendus obcaecati eligendi natus
+      vitae.
+    </p>
+
+    <!--MDN Web Docs link olacak ve sitesine gidecek-->
+    <p>
+      Yandaki linke tıkla
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+        style="text-decoration: none"
+        >MDN Web Docs</a
+      >
+    </p>
+
+    <p id="baturhanınfotosu"><b>Baturhan'ın Fotoğrafı</b></p>
+    <!--Resim ekleyiniz kendi resminizi ekleyiniz ve alternatif olarak Kişisel websitem için fotoğraf yazınız-->
+
+    <a href="https://www.linkedin.com/in/baturhanaykut/" target="_blank">
+      <img
+        class="image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIa5nC1mUO49285PZc_ky-aRP7oZ3seCEVVnPWriE0g&s"
+      />
+    </a>
+    <br />
+    <img
+      class="fit-picture"
+      src=""
+      alt="Grapefruit slice atop a pile of other slices"
+    />
+
+    <!--Bilgeadam Boost Öğrencisi yazdırınız paragraf arasında. Boost kısmı kalın olsun-->
+    <p>
+      Bilgeadam <b><em>Boost</em></b> Öğrencisi
+    </p>
+
+    <!-- Buraya bir boydan boya çizgi atın-->
+    <hr style="border-top: 4px solid red" />
+    <hr style="border-top: 4px dashed red" />
+    <hr style="border-top: 4px dotted red" />
+    <!-- Eğitimlerim h3 , aldığınız eğitimleri liste şeklinde gösteriniz-->
+    <h3>Eğitimlerim</h3>
+    <ul>
+      <li>Bilge Adam Boost .NET</li>
+      <li>Bilgisayar Mühendisliği</li>
+      <li>Managment Information Systems</li>
+    </ul>
+
+    <ul>
+      <li class="egitimli">An item</li>
+      <li class="egitimli">Another item</li>
+    </ul>
+
+    <!-- bir tane buton ekleyin -->
+    <button>Bu bir buton</button><br />
+    <button>Bu bir buton</button><br />
+    <button>Bu bir buton</button><br />
+
+    <!-- bir tane textbox ekleyin -->
+    <input type="text" required minlength="4" maxlength="8" size="10" />
+    <!-- bir alt satıra geçsin -->
+    <br />
+    <!-- bir tane numara alan textbox ekleyin -->
+    <input type="number" />
+
+    <p>
+      Cinsiyet: Erkek<input type="checkbox" checked /> Kadın<input
+        type="checkbox"
+      />
+    </p>
+
+    <input type="color" />
+
+    <input type="date" />
+
+    <input type="password" weight="100px" height="50px" />
+
+    <!-- H1 den H6 ya kadar adınızı alt alta yazınız -->
+    <h1>Zafer</h1>
+    <h2>Zafer</h2>
+    <h3>Zafer</h3>
+    <h4>Zafer</h4>
+    <h5>Zafer</h5>
+    <h6>Zafer</h6>
+
+    <!-- Sıralı 1,2,3.. süper lig ilk 5 takımını yazınız -->
+
+    <ol type="1">
+      <li>Beşiktaş</li>
+      <li>Adana Demirspor</li>
+      <li>Fenebahçe</li>
+      <li>Galatasaray</li>
+      <li>Trabzon</li>
+    </ol>
+  </body>
+</html>
